@@ -11,16 +11,22 @@ import shutil
 # ASCII Banner
 # ---------------------------
 def ascii_banner():
-    banner = r"""
- ____  _                 _ _____     _ _ 
+    RED = "\033[91m"
+    WHITE = "\033[97m"
+    RESET = "\033[0m"
+    BOLD = "\033[1m"
+
+    banner = f"""
+{RED}{BOLD} ____  _                 _ _____     _ _ 
 | __ )| | ___   ___   __| |_   _| __(_| |
-|  _ \| |/ _ \ / _ \ / _` | | || '__| | |
+|  _ \\| |/ _ \\ / _ \\ / _` | | || '__| | |
 | |_) | | (_) | (_) | (_| | | || (_)| | |
-|____/|_|\___/ \___/ \__,_| |_||_|__|_|_|
-             BloodTrailCLI
-    """
+|____/|_|\\___/ \\___/ \\__,_| |_||_|__|_|_|
+{WHITE}             {BOLD}BloodTrailCLI 
+{RESET}
+"""
     print(banner)
-    print("Welcome to 🩸 BloodTrailCLI — Active Directory Relationship Mapper\n")
+    print(f"{WHITE}Welcome to {RED} BloodTrailCLI🐾🐾🩸 {WHITE} — Active Directory Relationship Mapper{RESET}\n")
 
 # ---------------------------
 # SID Map Builder
@@ -211,7 +217,7 @@ def main_menu():
         choice = input("\nSelect an option: ").strip()
 
         if choice == "1":
-            zip_path = input("\n📂 Enter path to SharpHound ZIP: ").strip()
+            zip_path = input("\n📂 Enter path to SharpHound ZIP (Example: C:\\File\\path\\BloodHound.zip): ").strip()
             if not os.path.exists(zip_path):
                 print("❌ File not found.")
                 continue
