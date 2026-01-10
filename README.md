@@ -32,6 +32,7 @@ CERT PUBLISHERS@TECH.CORP                  -- MemberOf             --> DENIED RO
 ENTERPRISE ADMINS@TECH.CORP                -- MemberOf             --> DENIED RODC PASSWORD REPLICATION GROUP@TECH.CORP
 SCHEMA ADMINS@TECH.CORP                    -- MemberOf             --> DENIED RODC PASSWORD REPLICATION GROUP@TECH.CORP
 
+---
 ## 📦 Supported SharpHound Files
 
 BloodTrailCLI currently supports the following SharpHound JSON files:
