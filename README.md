@@ -1,4 +1,4 @@
-# 🐾🐾🩸 BloodTrailcli
+# 🐾🐾🩸 BloodTrailCli
 
 **BloodTrailCLI** is a lightweight, menu-driven command-line tool for parsing and mapping Active Directory relationships from **SharpHound** data — without requiring Neo4j or the BloodHound UI.
 
